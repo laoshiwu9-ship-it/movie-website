@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>不是已經結束，只是蔓延未完 | 官方網站</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 導航欄 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>不是已經結束，只是蔓延未完</h2>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">首頁</a>
+                <a href="#story" class="nav-link">劇情</a>
+                <a href="#trailer" class="nav-link">預告片</a>
+                <a href="#gallery" class="nav-link">劇照</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要區塊 -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <img src="movie_thumbnail_main.jpeg" alt="電影海報" class="hero-bg-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">不是已經結束，<br>只是蔓延未完</h1>
+            <p class="hero-subtitle">It's not over, it's just spreading.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('trailer')">觀看預告片</button>
+                <button class="btn btn-secondary" onclick="scrollToSection('story')">了解更多</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 劇情介紹 -->
+    <section id="story" class="story-section">
+        <div class="container">
+            <h2 class="section-title">劇情介紹</h2>
+            <div class="story-content">
+                <div class="story-main">
+                    <h3>電影敘述</h3>
+                    <p>在一片被濃霧吞噬的森林深處，有一段「歷史」。他們絢爛表演的背後，隱藏著對自然「禁忌」。有一個「人」潛入這場幻影與暗潮湧動的陷阱，試圖揭開真相並阻止復仇。然而，他很快發現：這不僅是一場對抗的行動，更是一場對抗蔓延不止的黑暗。就在這時......</p>
+                </div>
+                <div class="story-trailer">
+                    <h3>預告片敘述</h3>
+                    <p>迷霧籠罩的森林深處，危險正在醞釀。迷幻秀背後，暗潮洶湧。孤身「他」進入幻影陷阱，只為揭開真相。黑暗無法阻擋，命運的邊界即將被改寫……</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 預告片區塊 -->
+    <section id="trailer" class="trailer-section">
+        <div class="container">
+            <h2 class="section-title">觀看</h2>
+            <div class="trailer-grid">
+                <div class="trailer-item">
+                    <h3>正式預告片</h3>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/BXgxR-gXCug" 
+                                frameborder="0" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="view-count" id="main-trailer-views">觀看次數: 載入中...</div>
+                </div>
+                <div class="trailer-item">
+                    <h3>電影</h3>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/cJn8QvRAOPs" 
+                                frameborder="0" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="view-count" id="trailer-views">觀看次數: 載入中...</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 劇照區塊 -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">劇照</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="movie_thumbnail_main.jpeg" alt="電影劇照 1" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="movie_thumbnail_trailer.jpeg" alt="電影劇照 2" class="gallery-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁尾 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p>&copy; 2025 不是已經結束，只是蔓延未完. 版權所有.</p>
+                    <div class="rating-badge">保護級</div>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.youtube.com/watch?v=BXgxR-gXCug" target="_blank" class="social-link">YouTube</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
